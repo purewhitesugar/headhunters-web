@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url("base.css");
+img{
+	margin-bottom: 20px;
+}
+p {
+	font-size: 1.4em;
+}
+ .row {
+	 margin-bottom: 15px
+ }
+ .footerP {
+	 font-size: 1em;
+ }	 
+a:link, a:visited {
+	color: #FFF;
+}		 
+a:hover { 
+    color: #e7e7e7;
+	text-decoration: none;
+}
+.linkTop {
+	text-align: center;
+}
+.underline {
+	height: 3px;
+	width: 90%;
+	background-color: #099;
+	margin: 20px auto 30px auto;	
+}
+
+@media (min-width:768px){
+	.underline {
+		width: 100%;
+	
+}
+}
+			 
+@media (min-width:992px){
+	.linkTop {
+		text-align: left;
+}
+
+}

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url("./base.css");
+
+table {
+	font-family: josefin-slab;
+	font-style: normal;
+	font-weight: 300;	
+}
+
+.underline {
+	height: 2px;
+	width: 70%;
+	background-color: #009999;
+	margin-bottom: 9px;
+	margin-top: -14px;
+}
+
+img {
+	margin-bottom: 30px;
+}
+	
+
+
+
+
