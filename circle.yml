@@ -2,26 +2,7 @@
 # Circleci deployment configuration
 
 # machine #############################
-
-machine:
-  node:
-    version: 0.12.0
-
-dependencies:
-  override:
-    - true
-  post:
-    - bower install
-    - npm install browserstack-cli -g
-    - npm install testem -g
-
-checkout:
-  override:
-    - true
-
-database:
-  override:
-    - true    
+  
 
 # testing #############################
 
