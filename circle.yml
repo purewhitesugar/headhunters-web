@@ -13,6 +13,8 @@ test:
 # deployment ##########################
 
 deployment:
+  pre:
+
   production: # just a label; label names are completely up to you
     branch: master
     commands:
@@ -20,4 +22,5 @@ deployment:
   staging:
     branch: /^.+$/
     commands:
+      - chmod +x ./bin/deploy
       - ./bin/deploy /application/staging $CIRCLE_BRANCH
