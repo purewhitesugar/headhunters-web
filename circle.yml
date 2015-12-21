@@ -1,0 +1,12 @@
+# christian@purewhitesugar.se
+# 
+
+deployment:
+  production: # just a label; label names are completely up to you
+    branch: master
+    commands:
+      - #tba
+  staging:
+    branch: /^.+$/
+    commands:
+      - #tba
