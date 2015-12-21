@@ -8,6 +8,16 @@
 
 test:
   override:
-    - echo $DEPLOY_KEY
+    - true
 
 # deployment ##########################
+
+deployment:
+  production: # just a label; label names are completely up to you
+    branch: master
+    commands:
+      - ./bin/deploy /application/production master
+  staging:
+    branch: /^.+$/
+    commands:
+      - ./bin/deploy /application/staging $CIRCLE_BRANCH

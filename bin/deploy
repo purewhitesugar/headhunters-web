@@ -1,3 +1,12 @@
 #!/usr/bin
 # christian@purewhitesugar.se
 # Deployment script executed by circleci
+# Usage: ./bin/deploy application-root
+
+echo $DEPLOY_KEY > ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_rsa
+
+cd $1 && \
+  git fetch origin && \
+  git checkout $2 && \
+  git pull origin $2 
