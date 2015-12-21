@@ -8,7 +8,7 @@
 
 test:
   override:
-    - true
+    - echo false
 
 # deployment ##########################
 
