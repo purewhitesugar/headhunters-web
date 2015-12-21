@@ -1,11 +1,20 @@
 # christian@purewhitesugar.se
 # Circleci deployment configuration
+
+# testing #############################
+
+test:
+  override:
+    - #tbd
+
+# deployment ##########################
+
 deployment:
   production: # just a label; label names are completely up to you
     branch: master
     commands:
-      - #tba
+      - #tbd
   staging:
     branch: /^.+$/
     commands:
-      - #tba
+      - #tbd
