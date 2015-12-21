@@ -11,13 +11,3 @@ test:
     - echo $DEPLOY_KEY
 
 # deployment ##########################
-
-deployment:
-  production: # just a label; label names are completely up to you
-    branch: master
-    commands:
-      - #tbd
-  staging:
-    branch: /^.+$/
-    commands:
-      - #tbd
