@@ -1,6 +1,5 @@
 # christian@purewhitesugar.se
-# 
-
+# Circleci deployment configuration
 deployment:
   production: # just a label; label names are completely up to you
     branch: master
