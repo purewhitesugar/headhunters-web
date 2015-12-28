@@ -8,7 +8,7 @@
 
 test:
   override:
-    - echo true
+    - true
 
 dependencies:
   pre:
