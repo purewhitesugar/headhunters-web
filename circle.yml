@@ -10,12 +10,13 @@ test:
   override:
     - echo false
 
-# deployment ##########################
-
-deployment:
+dependencies:
   pre:
     - chmod +x ./bin/deploy
     
+# deployment ##########################
+
+deployment:
   production: # just a label; label names are completely up to you
     branch: master
     commands:
