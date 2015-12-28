@@ -13,6 +13,9 @@ test:
 # deployment ##########################
 
 deployment:
+  pre:
+    - chmod +x ./bin/deploy
+    
   production: # just a label; label names are completely up to you
     branch: master
     commands:
