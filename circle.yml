@@ -24,5 +24,4 @@ deployment:
   staging:
     branch: /^.+$/
     commands:
-      - echo `pwd`
       - ./bin/deploy /application/staging $CIRCLE_BRANCH
