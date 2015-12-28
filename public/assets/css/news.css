@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import url("./base.css");
+
+.news {
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+@media (min-width:768px){
+	.news {
+	font-size: 2em;
+}
+	
+}

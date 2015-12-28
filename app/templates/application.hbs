@@ -1,3 +1,57 @@
-<h2 id="title">Welcome to Ember</h2>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="/assets/js/jquery-1.11.2.min.js"></script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="index.html"><img src="/assets/img/logoM.png" class="imgLg borderNone" alt="Headhunter Hair Styling"></a>
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>  
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">About<span class="sr-only">(current)</span></a></li>
+        
+            <li ><a href="/location">Location</a></li>
+        <li class="dropdown"><a href="/salon/hair" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services & Prices<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/salon/hair">Haircuts & styling</a></li>
+            <li><a href="/salon/services">Salon services</a></li>
+            <li class="divider"></li>
+            <li><a href="/salon/featured">What's new</a></li>
+            <li><a href="/salon/products">Products</a></li>
+          </ul>
+        </li>
+        <li><a href="/staff">Staff</a></li>
+        <li><a href="/links">Links</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
 
 {{outlet}}
+
+<div class="container-fluid">
+  <div class="row footer">
+    <div class="col-xs-2">
+      <a href="https://www.facebook.com/Headhunter-Hairstyling-121146857935284/" target="_blank"><i class="fa fa-facebook-official fa-5x"></i></a>
+    </div>
+   
+    <div class="col-xs-3 col-xs-offset-3 col-md-offset-4 col-md-3 col-lg-2 col-lg-offset-5">
+      <p class="footerP">Headhunter Hair Styling 
+      <br />
+      205 S Baylen St <br />
+      Pensacola, FL  32502</p>
+      <p class="footerP">850-433-3308</p>
+    </div>
+    <div class="col-xs-offset-0 col-xs-4 col-md-3">
+      <p class="footerP"><a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="address.html">LOCATION</a> <br />  <a href="staff.html">STAFF</a> | <a href="links.html">LINKS</a><br /> SERVICES & PRICES <br /> <a href="hair.html">hair</a> &middot; <a href="salon.html">salon</a> &middot; <a href="salonNews.html">news</a> &middot; <a href="products.html">products</a> </p>
+    </div>
+    <div class="marginPlease col-lg-5 col-xs-12 col-md-offset-6 col-md-6 col-lg-offset-7">
+      <p class="text-right footerP">Copyright &copy; 2015 &middot; All Rights Reserved &middot; Design by <a href="http://purewhitesugar.se/">PureWhiteSugar</a></p> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+# christian@purewhitesugar.se
+# Circleci deployment configuration
+
+# machine #############################
+  
+
+# testing #############################
+
+test:
+  override:
+    - echo true
+
+dependencies:
+  pre:
+    - chmod +x ./bin/deploy
+
+# deployment ##########################
+
+deployment:
+  production: # just a label; label names are completely up to you
+    branch: master
+    commands:
+      - ./bin/deploy /application/production master
+  staging:
+    branch: /^.+$/
+    commands:
+      - ./bin/deploy /application/staging $CIRCLE_BRANCH
