@@ -6,6 +6,8 @@
 ssh headhunter.purewhitesugar.se \
   "
   cd $1 && \
+  git reset HEAD --hard && \
+  git clean -fd && \
   git fetch origin && \
   git checkout $2 && \
   git pull origin $2
