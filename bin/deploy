@@ -4,7 +4,9 @@
 # Usage: ./bin/deploy application-root
 
 ssh headhunter.purewhitesugar.se \
+  "
   cd $1 && \
   git fetch origin && \
   git checkout $2 && \
-  git pull origin $2 
+  git pull origin $2
+  "
