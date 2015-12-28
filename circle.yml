@@ -8,12 +8,12 @@
 
 test:
   override:
-    - echo false
+    - echo true
 
 dependencies:
   pre:
     - chmod +x ./bin/deploy
-    
+
 # deployment ##########################
 
 deployment:
@@ -24,5 +24,4 @@ deployment:
   staging:
     branch: /^.+$/
     commands:
-      - chmod +x ./bin/deploy
       - ./bin/deploy /application/staging $CIRCLE_BRANCH
